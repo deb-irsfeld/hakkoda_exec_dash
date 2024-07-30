@@ -47,8 +47,8 @@ locations:
   EXEC_SOURCE_REFERENCE:
     mappingDefinitions:
       "58":
-        database: EXEC_DATA_DB
-        schema: PUBLIC
+        database: REFERENCE_DB
+        schema: RAW
   EXEC_SOURCE_SAGE:
     mappingDefinitions:
       "58":
