@@ -1,0 +1,141 @@
+steps:
+  STG_RATE_CARD_HISTORY-c0ded669-bbd1-413c-9788-25ec983c4ce6:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 081b3af8-0bb8-45ab-8f67-02b9ca08270e
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 146daaa2-692f-4101-94be-13ffb3fcbbed
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: baa0d921-5b06-4193-9bbe-539ab0803317
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 024d518b-7b82-4c18-ae59-f03f945a7624
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: 5a08ae9c-899c-4d73-8b28-bcaa8925f349
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: USES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0d632468-c865-4e10-b5dc-5454e6bd9b88
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: bb721508-2dab-40a2-889d-91993b08e92f
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CURRENCY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0f9e3930-6d48-48ba-932b-a531383a75e0
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: ce5a027f-3ca6-484f-bbd6-aa08d3e1a426
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: RATE_CARD_SET_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b8ae426f-fc74-4708-a7f0-69f336ad1409
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: 00c43da0-01d0-4fb4-9e9a-b7887c45faf1
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 536db662-0834-4350-af41-51f88a0cc724
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: fad2019a-f7f3-4f90-a637-f01723fa7ff8
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c2dab3d8-4cda-4e43-8622-8113d894641e
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+          - columnReference:
+              columnCounter: 8efdd482-e472-4e52-9fec-8493fa13a8b4
+              stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5bda8c53-22ea-4e18-ba3e-30b0367c04a9
+                    stepCounter: e9205612-fe73-4f12-a608-b25d769d51a9
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: RATE_CARD_HISTORY
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'RATE_CARD_HISTORY') }} "RATE_CARD_HISTORY"
+            name: STG_RATE_CARD_HISTORY
+            noLinkRefs: []
+      name: STG_RATE_CARD_HISTORY
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: c0ded669-bbd1-413c-9788-25ec983c4ce6

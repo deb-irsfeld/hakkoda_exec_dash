@@ -1,0 +1,146 @@
+steps:
+  V_AR_INVOICE-15c01a02-f3d8-4ed7-b9d8-67fbb55bc175:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b1224495-5d72-4c3d-9fef-ca85b996b64a
+              stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RECORDNO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d808dfb9-0008-4e71-b099-2b810c073e3f
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 31757688-9532-4f37-b300-f595d0a39c74
+              stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: MEGAENTITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f87bd30e-ef76-48bd-a25d-77d3b8e83f48
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cb64f092-184f-4c7b-a780-df61ffffc65e
+              stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TRX_AMOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2b1ca93f-f981-4c1c-b9ce-832c0426e287
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fe62beee-4f39-4175-818e-56ba65a548c1
+              stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PROJECT_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b88bc519-9efa-4ac8-812a-c16c8ec17585
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cfa8659d-a119-4df6-b265-324eda1fbdfc
+              stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOMER_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 32c965f6-fd81-43dc-83b3-7abca4752cf4
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_AR_INVOICE: 7f714495-1d23-466c-b331-fa8231838d3f
+              STG_AR_INVOICE_ITEM: 41555fd1-ecaf-4332-9c0f-5b1025995560
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_SAGE
+                nodeName: STG_AR_INVOICE
+              - locationName: EXEC_DASH_SAGE
+                nodeName: STG_AR_INVOICE_ITEM
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_DASH_SAGE', 'STG_AR_INVOICE_ITEM') }} "STG_AR_INVOICE_ITEM"
+                INNER JOIN {{ ref('EXEC_DASH_SAGE', 'STG_AR_INVOICE') }} "STG_AR_INVOICE"
+                ON "STG_AR_INVOICE"."RECORDNO" = "STG_AR_INVOICE_ITEM"."RECORDKEY"
+            name: V_AR_INVOICE
+            noLinkRefs: []
+      name: V_AR_INVOICE
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: 15c01a02-f3d8-4ed7-b9d8-67fbb55bc175

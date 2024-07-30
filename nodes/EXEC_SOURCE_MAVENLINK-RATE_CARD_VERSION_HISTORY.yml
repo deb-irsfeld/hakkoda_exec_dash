@@ -1,0 +1,123 @@
+steps:
+  RATE_CARD_VERSION_HISTORY-1f74fe8d-bfa0-4c45-a89b-4277c0cab987:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7e9cb31c-8f0b-4bd7-8465-e45414a75f95
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4dcadeae-cc65-4aaa-a056-ae7787689da4
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c09d43ab-6f65-4525-8988-c6e0067ba579
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_RATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 676ca824-4821-40d8-a99e-2488a22e7ee9
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: RATE_CARD_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 09002d13-15a3-4785-87ef-e0c3c340d6e9
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 694244e8-223d-4026-9df3-fc868796530c
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5900a3c5-b5bd-46c1-960f-91530abf1c3c
+              stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'RATE_CARD_VERSION_HISTORY') }}
+      name: RATE_CARD_VERSION_HISTORY
+      schema: ""
+      sqlType: Source
+      table: RATE_CARD_VERSION_HISTORY
+      type: sourceInput
+    stepCounter: 1f74fe8d-bfa0-4c45-a89b-4277c0cab987

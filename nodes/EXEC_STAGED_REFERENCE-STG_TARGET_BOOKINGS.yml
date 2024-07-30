@@ -1,0 +1,63 @@
+steps:
+  STG_TARGET_BOOKINGS-eb9368f1-3a2f-4bbb-b557-46e1b439d0d4:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_STAGED_REFERENCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 97d42bfb-261e-46f1-a3eb-e5045e0aa487
+              stepCounter: eb9368f1-3a2f-4bbb-b557-46e1b439d0d4
+            dataType: VARCHAR(1000)
+            description: ""
+            hashDetails: null
+            name: QUARTER_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dfa5f962-9bf5-497f-8a18-38481c677243
+                    stepCounter: 65b45a1d-68d7-4f66-9dcd-b1fc543671e7
+                transform: ""
+          - columnReference:
+              columnCounter: 01f60eab-4724-4a81-a889-10aa1d43e010
+              stepCounter: eb9368f1-3a2f-4bbb-b557-46e1b439d0d4
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: TARGET_AMT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 485762a6-254c-477e-9efe-f51ca3717d3a
+                    stepCounter: 65b45a1d-68d7-4f66-9dcd-b1fc543671e7
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_REFERENCE
+                nodeName: TARGET_BOOKINGS
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_REFERENCE', 'TARGET_BOOKINGS') }} "TARGET_BOOKINGS"
+            name: STG_TARGET_BOOKINGS
+            noLinkRefs: []
+      name: STG_TARGET_BOOKINGS
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: eb9368f1-3a2f-4bbb-b557-46e1b439d0d4

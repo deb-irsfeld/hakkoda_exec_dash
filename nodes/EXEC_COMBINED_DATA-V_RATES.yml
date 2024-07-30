@@ -1,0 +1,250 @@
+steps:
+  V_RATES-9b474f12-6e6d-4ab2-a490-dc069f790f71:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 0ba9d882-cc05-4a8e-a0a6-dd7b22036abe
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f5adff25-9dc2-46e5-af1e-acb31564fba9
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e05d1dd8-d27b-439c-9f78-7f8cb3b11c9f
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d4503cd6-3bc3-419c-a8ca-78e6d44d416a
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5e1f0440-ee37-4ec2-85fa-bd4e649e35dc
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ROLE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4c46434-5024-4d9b-93ad-84bcbfabded6
+                    stepCounter: 6dbd0104-8381-4f4d-8e7e-ff33754775e5
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2c2c1ee8-9a7c-49e3-9b8e-f991f49ba074
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RATE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 356ae8c8-81e9-4067-b308-1fae147c1a03
+                    stepCounter: 6dbd0104-8381-4f4d-8e7e-ff33754775e5
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: c1e5d014-b2b2-4d87-bdca-ab64f1fb27fa
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: RATE_CARD_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 50f37c43-67c8-470b-8cea-7af2937e505f
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 363e4878-195c-4162-840c-a77e7a02118b
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: DENSE_RANK() OVER (PARTITION BY "STG_RATE_CARD_VERSION_HISTORY".RATE_CARD_ID ORDER BY "STG_RATE_CARD_VERSION_HISTORY"."UPDATED_AT" DESC)
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6bea43c5-53b6-4096-be08-cea05e355fb4
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            config: {}
+            dataType: NUMBER(38,2)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8491608b-7d14-4c3a-9719-23c04ce54cff
+                    stepCounter: 6dbd0104-8381-4f4d-8e7e-ff33754775e5
+                transform: "\"STG_RATE_CARD_ROLE_HISTORY\".RATE/100"
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 766f56b2-57ff-4bfb-b8c6-4dedc5be797c
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9980a9a2-3e3d-4c5b-aeef-04073800b707
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - columnReference:
+              columnCounter: bab48680-5529-44f8-8d2c-c70e208753b6
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: DEFAULT_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b1e5437d-5ffc-4fea-b93a-ff9061934aae
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - columnReference:
+              columnCounter: 822a6906-e51f-46ef-b9e3-5e3820cc795a
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4a3ff4ed-2866-4d14-967b-63ffe742f989
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - columnReference:
+              columnCounter: ab2e47b7-80d5-41b2-9637-25a50a180e06
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 301d6440-9d2a-461b-b11e-890c207ceea9
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+          - columnReference:
+              columnCounter: aff21a97-0d24-47ef-8d46-6fe6e5fb373f
+              stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 465789aa-893c-47f8-a7c3-eede039f07b5
+                    stepCounter: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_RATE_CARD_HISTORY: c0ded669-bbd1-413c-9788-25ec983c4ce6
+              STG_RATE_CARD_ROLE_HISTORY: 6dbd0104-8381-4f4d-8e7e-ff33754775e5
+              STG_RATE_CARD_VERSION_HISTORY: a0ef3014-892b-4839-a3a4-9bc1b17e6fb1
+              STG_WORKSPACE: ad383d69-c93b-4976-871b-c18d60aa8ae7
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_RATE_CARD_HISTORY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_RATE_CARD_ROLE_HISTORY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_RATE_CARD_VERSION_HISTORY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE
+            join:
+              joinCondition: |+
+
+
+                FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_RATE_CARD_VERSION_HISTORY') }} "STG_RATE_CARD_VERSION_HISTORY"
+                INNER JOIN  {{ ref('EXEC_DASH_MAVENLINK', 'STG_RATE_CARD_HISTORY') }} "STG_RATE_CARD_HISTORY"
+                ON STG_RATE_CARD_HISTORY."ID" = "STG_RATE_CARD_VERSION_HISTORY"."RATE_CARD_ID"
+                INNER JOIN  {{ ref('EXEC_DASH_MAVENLINK', 'STG_RATE_CARD_ROLE_HISTORY') }} "STG_RATE_CARD_ROLE_HISTORY"
+                ON "STG_RATE_CARD_ROLE_HISTORY"."RATE_CARD_VERSION_ID" = "STG_RATE_CARD_VERSION_HISTORY"."ID"
+                INNER JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE') }} "STG_WORKSPACE"
+                ON "STG_WORKSPACE".RATE_CARD_ID = "STG_RATE_CARD_HISTORY"."ID"
+
+            name: V_RATES
+            noLinkRefs: []
+      name: V_RATES
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71

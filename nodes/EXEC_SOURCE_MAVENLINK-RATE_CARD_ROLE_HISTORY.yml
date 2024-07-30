@@ -1,0 +1,138 @@
+steps:
+  RATE_CARD_ROLE_HISTORY-803cac15-960c-4df8-a994-755c570d1438:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b7a93972-bb91-4c29-a551-fc2a9b512bf4
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d863fc6f-44f3-45e7-9666-ed4f1e53e91a
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f2708760-96b6-4af7-973e-de1aaf9cf708
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: RATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8edb51d6-7da5-44d1-9163-9761f009ce46
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ROLE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6f9883ce-8c02-4d9f-aaf0-bd7c86fb24d7
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: RATE_CARD_VERSION_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a139446f-de5a-479c-8b7b-41edf55b14f0
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5524452c-43f7-46a1-8d72-ffc29a5b2432
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6d223ac8-1fb9-4c92-a2ee-8cf1a0b1a1a6
+              stepCounter: 803cac15-960c-4df8-a994-755c570d1438
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'RATE_CARD_ROLE_HISTORY') }}
+      name: RATE_CARD_ROLE_HISTORY
+      schema: ""
+      sqlType: Source
+      table: RATE_CARD_ROLE_HISTORY
+      type: sourceInput
+    stepCounter: 803cac15-960c-4df8-a994-755c570d1438

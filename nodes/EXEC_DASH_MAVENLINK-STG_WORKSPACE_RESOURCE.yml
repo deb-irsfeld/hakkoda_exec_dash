@@ -1,0 +1,206 @@
+steps:
+  STG_WORKSPACE_RESOURCE-a1f12038-7275-43ee-b40a-f3e22d4fbda6:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: cd74acb6-86ce-467a-aec1-3859ce04605e
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 41a3eb1d-4c0e-426a-8680-7135e6bdf44f
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: ebe3acc9-287c-4f8c-9adc-1d305fb25431
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6fe031fd-6d84-4342-bcf6-8f28462dd3c1
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: d5c29df3-3460-4e54-b6ca-9c2500ce79de
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4480e6f2-21d4-4a25-93eb-fbd910fa04eb
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: b717c958-4ee3-4e10-94fb-55951645d03a
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ROLE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9765e1ea-2b8a-4814-acbf-cf8ae0070eb8
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: bdf798e7-1a54-488b-8a39-3af00ae5bdd2
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: PARTICIPATION_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ca21349b-c907-4de5-b21f-bbb22f61473e
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: 0ceb7c4f-d742-4764-bb83-6fdffb9c0f06
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: LABEL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7317db7b-95f2-4902-823b-c5c8d56cf437
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: 453bbfbe-370a-4be5-ac5a-0a9845e337cb
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: ROLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3189f31d-817a-42a6-9f3f-e0df32290bcf
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: eb7fb8c2-52ac-4933-8a35-f1cd860c6baa
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: FULL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5c9c4fb8-672a-46eb-9b9f-b68a7a101643
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: ba9ed8e1-2c8d-4634-9b03-6494f9a0b31b
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: PHOTO_PATH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1f25f350-4a41-4e71-bdd1-dc9b5d32e0ad
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: b1a4a25a-0da5-42b9-b8ea-e4abcc304723
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: DISPLAY_LABEL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: acde3b49-966a-48c6-8e38-03fd3389b5a8
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: e6ecd7ec-0bca-4c24-8cad-fcd5cf6177d0
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 236d1c18-c71f-498c-9233-3e3ef1d6719a
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: a25e0162-8795-4202-965b-881e88297356
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9e5302d3-77ea-44c9-a6a3-f7903af8c9a2
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+          - columnReference:
+              columnCounter: a98ed9c7-de27-41b6-8130-37a2654a5f8d
+              stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 47945203-3d35-4e70-a1e9-5f76f48f396a
+                    stepCounter: 130a11a5-4714-4c92-8e74-77157986a171
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: WORKSPACE_RESOURCE
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'WORKSPACE_RESOURCE') }} "WORKSPACE_RESOURCE"
+            name: STG_WORKSPACE_RESOURCE
+            noLinkRefs: []
+      name: STG_WORKSPACE_RESOURCE
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6

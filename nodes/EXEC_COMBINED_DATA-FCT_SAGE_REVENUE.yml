@@ -1,0 +1,146 @@
+steps:
+  FCT_SAGE_REVENUE-651df0df-f1d0-469f-8544-15d3cf4dbf93:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: TRUNCATE TABLE exec_data_db.refined.FCT_SAGE_REVENUE;
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e81e09bc-ed42-4c38-9ad6-638fb8835212
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ACCOUNTNO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9591b409-84d4-4fe9-994d-0bad0813821c
+                    stepCounter: 143e755e-be2b-446d-97db-3d95b4d4c95e
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 072ea8e2-04c2-4627-ba7f-9de33b59b7aa
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: ACCOUNTTITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 72f55d28-e2a9-49c9-8a69-db1feac2be8e
+                    stepCounter: 143e755e-be2b-446d-97db-3d95b4d4c95e
+                transform: ""
+          - columnReference:
+              columnCounter: 700e06ac-3a80-4089-b86f-33ceb0a8bba3
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: PROJECTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4a58c27c-3c8f-4869-b9fb-c7abcdee8a67
+                    stepCounter: 143e755e-be2b-446d-97db-3d95b4d4c95e
+                transform: ""
+          - columnReference:
+              columnCounter: f03df4fc-f5ee-4b03-bc59-9c8f89844089
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: ENTRY_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 40c4aec1-b8dd-4cb0-b8cb-dc82536fe7ab
+                    stepCounter: 143e755e-be2b-446d-97db-3d95b4d4c95e
+                transform: ""
+          - columnReference:
+              columnCounter: 9758f66f-1e01-4be4-9208-ec2917e35cc1
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            dataType: FLOAT
+            description: ""
+            hashDetails: null
+            name: AMOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 966d7010-75d7-4c44-9caf-074a32d31335
+                    stepCounter: 143e755e-be2b-446d-97db-3d95b4d4c95e
+                transform: "\"V_GL_DETAIL\".\"AMOUNT\"*-1"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 70336dba-34e0-4886-af74-b13cdd781412
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8b055941-aadf-4b49-8729-fc75577789ae
+              stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              V_GL_DETAIL: 143e755e-be2b-446d-97db-3d95b4d4c95e
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_COMBINED_DATA
+                nodeName: V_GL_DETAIL
+            join:
+              joinCondition: |+
+                FROM {{ ref('EXEC_COMBINED_DATA', 'V_GL_DETAIL') }} "V_GL_DETAIL"
+
+
+            name: FCT_SAGE_REVENUE
+            noLinkRefs: []
+      name: FCT_SAGE_REVENUE
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 651df0df-f1d0-469f-8544-15d3cf4dbf93

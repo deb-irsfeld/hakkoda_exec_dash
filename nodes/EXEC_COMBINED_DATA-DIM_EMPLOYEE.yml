@@ -1,0 +1,295 @@
+steps:
+  DIM_EMPLOYEE-cd21afa5-d7d2-414b-adf0-3547b49995b4:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b925e278-f79f-4e22-8aae-18d7d7aa7aff
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            isSurrogateKey: true
+            name: DIM_USER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2d547aac-a67e-4787-980d-25574a5ab6a6
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b224b2e4-836b-4a64-b8e2-5eec6f4743b6
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 5e6cc648-541f-462e-b262-1e2d7e2967c8
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ROLE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ad3e5881-b032-42f7-8a0d-9a1a152749d8
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 76520ff0-0033-4a7d-8c26-ab85381e72e1
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: FULL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 74263e14-448c-4273-a5a2-4000762e9c6d
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: fbe9f1c1-7796-426f-b5c5-e8c52005b151
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: EMAIL_ADDRESS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5baa56e8-01f3-4cb0-9ec1-a779ac8dec27
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 410580f3-7a15-417f-840f-df50aac5f6b6
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARIANT
+            description: ""
+            hashDetails: null
+            name: CUSTOM_PROJECT_TEAM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 57bf445f-cc4a-46ba-bcba-a2aeea4f3ad5
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 296729be-76dd-4d6f-87f4-b6a3a0f78b4e
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a0ef97d7-6c38-43f2-bbd6-67023296ab05
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 65f8b652-48f5-4ec0-9297-9d3ef284eeb9
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_LEVEL_03_HDL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0f2a3f85-2c24-4afe-a2b7-377c378b2328
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 978ac6dd-127d-44d0-a5d6-2f357fbf52aa
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_EXPERIENCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e2052c1e-7d68-459d-8888-f29c6060c8e3
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: 63ca759a-3170-4b86-a386-2323523d45b1
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_HAKKODA_LEVEL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 202f5836-ccba-4172-afad-5de4ea41cf1e
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: ceeea821-8468-4f08-8eb0-26b65e3f98e6
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_INDUSTRY_EXPERTISE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d9842072-bc6b-4a87-9e5c-2c2cb760f100
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - columnReference:
+              columnCounter: e8f95f53-c279-4d02-8b0f-cd528b6302c7
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CUSTOM_PRIMARY_GUILD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6c7c0fbc-8779-442c-b419-81de07005275
+                    stepCounter: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: db503422-e489-41b4-8802-e4bc4e2ddd48
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: IS_ACTIVE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d41592d5-1c59-4cad-b7b8-f9771853b873
+                    stepCounter: 15135854-71a8-4383-b62a-50b8eca5c316
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e8340048-c815-4896-8f9b-ccb1c6c5a414
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: MANAGER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 531d1f86-fcb7-4637-8917-f618c90264e3
+                    stepCounter: 15b84c9f-7662-437e-a57a-582b1b40b047
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c6356f25-cd5c-4581-8341-31dc91474078
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: MANAGER_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6714c129-9e7c-4c13-aa4b-9da7dfb11a96
+                    stepCounter: 529ca560-15ac-477b-99a6-2e29a998d428
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b8782473-7473-4661-9dee-eb882fd1dd1f
+              stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: MANAGER_EMAIL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ceb9038b-74b5-40da-93a6-0d59a1f406fe
+                    stepCounter: 529ca560-15ac-477b-99a6-2e29a998d428
+                transform: ""
+            systemColumnType: None
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_ACCOUNT_MEMBERSHIP: 15b84c9f-7662-437e-a57a-582b1b40b047
+              STG_OWNER: 15135854-71a8-4383-b62a-50b8eca5c316
+              STG_USER: 713dfeb1-18b5-4297-9852-a9eeae1f1da6
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_HUBSPOT
+                nodeName: STG_OWNER
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_ACCOUNT_MEMBERSHIP
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_MANAGER
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_USER
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_USER') }} "STG_USER"
+                LEFT JOIN {{ ref('EXEC_DASH_HUBSPOT', 'STG_OWNER') }} "STG_OWNER"
+                ON "STG_USER"."EMAIL_ADDRESS" = "STG_OWNER"."EMAIL"
+                left join {{ ref('EXEC_DASH_MAVENLINK', 'STG_ACCOUNT_MEMBERSHIP') }} "STG_ACCOUNT_MEMBERSHIP"
+                ON "STG_USER"."ID" = "STG_ACCOUNT_MEMBERSHIP"."USER_ID"
+                JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_MANAGER') }} "STG_MANAGER"
+                on "STG_ACCOUNT_MEMBERSHIP"."MANAGER_ID" = "STG_MANAGER".ID
+            name: DIM_EMPLOYEE
+            noLinkRefs: []
+      name: DIM_EMPLOYEE
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: cd21afa5-d7d2-414b-adf0-3547b49995b4

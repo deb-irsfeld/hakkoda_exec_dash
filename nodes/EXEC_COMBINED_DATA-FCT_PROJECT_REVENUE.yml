@@ -1,0 +1,192 @@
+steps:
+  FCT_PROJECT_REVENUE-934c1743-be61-4b9a-b313-af9ade9f9026:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: truncate table exec_data_db.refined.FCT_PROJECT_REVENUE;
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 1288e8e2-84ed-43c2-a868-aff299d3619e
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            dataType: VARCHAR(64)
+            description: ""
+            hashDetails: null
+            name: RECORDNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d808dfb9-0008-4e71-b099-2b810c073e3f
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+          - columnReference:
+              columnCounter: 6eeef974-434a-4a64-ac16-d03cd67ca737
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: RECORDID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2a73da7b-300d-46a1-8e34-1efafa88ce38
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+          - columnReference:
+              columnCounter: 82c1641a-a193-4ee7-bfad-13dffe2a6e11
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: MEGAENTITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f87bd30e-ef76-48bd-a25d-77d3b8e83f48
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+          - columnReference:
+              columnCounter: d5781327-72cb-4429-bb34-0b3061dfee49
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: HASPOSTEDREVREC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b13f13d-89aa-4fad-98cb-d1db6f53a974
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+          - columnReference:
+              columnCounter: 9fd8024c-1dd0-44b5-be80-beb7193d8cb1
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            dataType: FLOAT
+            description: ""
+            hashDetails: null
+            name: TRX_TOTALDUE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ae97e5a4-4ebc-4b49-a913-14523fe34e2f
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a13ae17b-e287-4f3c-82b9-ab9ad947df89
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: WHENCREATED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 734bf6e5-ca8a-4d42-afc6-448559597952
+                    stepCounter: 7f714495-1d23-466c-b331-fa8231838d3f
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d885ef73-ce03-42d1-b895-08baf70893f2
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TRX_AMOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2b1ca93f-f981-4c1c-b9ce-832c0426e287
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0ae71ad5-b53a-4125-969e-530ef83a3226
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PROJECTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b88bc519-9efa-4ac8-812a-c16c8ec17585
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 927e8d83-d4c1-4b6f-b378-c8f3266a6769
+              stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOMERNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 32c965f6-fd81-43dc-83b3-7abca4752cf4
+                    stepCounter: 41555fd1-ecaf-4332-9c0f-5b1025995560
+                transform: ""
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_AR_INVOICE: 7f714495-1d23-466c-b331-fa8231838d3f
+              STG_AR_INVOICE_ITEM: 41555fd1-ecaf-4332-9c0f-5b1025995560
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_SAGE
+                nodeName: STG_AR_INVOICE
+              - locationName: EXEC_DASH_SAGE
+                nodeName: STG_AR_INVOICE_ITEM
+            join:
+              joinCondition: |+
+                FROM {{ ref('EXEC_DASH_SAGE', 'STG_AR_INVOICE') }} "STG_AR_INVOICE"
+                JOIN {{ ref('EXEC_DASH_SAGE', 'STG_AR_INVOICE_ITEM') }} "STG_AR_INVOICE_ITEM"
+                ON "STG_AR_INVOICE"."RECORDNO" = "STG_AR_INVOICE_ITEM"."RECORDKEY"
+
+            name: FCT_PROJECT_REVENUE
+            noLinkRefs: []
+      name: FCT_PROJECT_REVENUE
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 934c1743-be61-4b9a-b313-af9ade9f9026

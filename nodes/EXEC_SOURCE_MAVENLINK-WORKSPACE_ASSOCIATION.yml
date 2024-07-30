@@ -1,0 +1,63 @@
+steps:
+  WORKSPACE_ASSOCIATION-3b780c63-1294-49ce-9d63-39fd75ead990:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1c215400-f482-4ce8-9a48-36571705b5e8
+              stepCounter: 3b780c63-1294-49ce-9d63-39fd75ead990
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: WORKSPACE_GROUP_ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 54a743ca-5b4f-4310-ba79-e69b1751542e
+              stepCounter: 3b780c63-1294-49ce-9d63-39fd75ead990
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: WORKSPACE_ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 822d7ba6-6cd1-4cda-87f8-49ab68f39d54
+              stepCounter: 3b780c63-1294-49ce-9d63-39fd75ead990
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'WORKSPACE_ASSOCIATION') }}
+      name: WORKSPACE_ASSOCIATION
+      schema: ""
+      sqlType: Source
+      table: WORKSPACE_ASSOCIATION
+      type: sourceInput
+    stepCounter: 3b780c63-1294-49ce-9d63-39fd75ead990

@@ -1,0 +1,90 @@
+steps:
+  V_EMPLOYEE_HOLIDAYS-c5e3d910-595e-4508-9a2a-e5e88b7685d0:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8ef6b660-7db2-4ba3-992a-d09f15e74a39
+              stepCounter: c5e3d910-595e-4508-9a2a-e5e88b7685d0
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5be1bb48-5447-4c4a-a3d9-80f9640494c0
+                    stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+                transform: ""
+          - columnReference:
+              columnCounter: 1f506ff6-1772-4789-929b-78aae5a2a53d
+              stepCounter: c5e3d910-595e-4508-9a2a-e5e88b7685d0
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 37b6ee39-131d-4178-aa41-aa7a66b696cf
+                    stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+                transform: ""
+          - columnReference:
+              columnCounter: f6a46e63-5e50-44cb-b354-6a260ff74e1b
+              stepCounter: c5e3d910-595e-4508-9a2a-e5e88b7685d0
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: TOTAL_HOURS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e83315c8-0903-40df-8eb9-94196f1ae76d
+                    stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_HOLIDAY: 49623b61-167b-4246-9d59-4c6c61bdb403
+              STG_HOLIDAY_CALENDAR: f01c074c-4b9f-4489-85e2-60f5037eef5b
+              STG_HOLIDAY_CALENDAR_ASSOCIATION: 256bc31f-247a-4a36-8e02-bd52fb4fe8b6
+              STG_HOLIDAY_CALENDAR_MEMBERSHIP: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_HOLIDAY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_HOLIDAY_CALENDAR
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_HOLIDAY_CALENDAR_ASSOCIATION
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_HOLIDAY_CALENDAR_MEMBERSHIP
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_HOLIDAY') }} "STG_HOLIDAY"
+                INNER JOIN{{ ref('EXEC_DASH_MAVENLINK', 'STG_HOLIDAY_CALENDAR_ASSOCIATION') }} "STG_HOLIDAY_CALENDAR_ASSOCIATION"
+                ON "STG_HOLIDAY"."ID" = "STG_HOLIDAY_CALENDAR_ASSOCIATION"."HOLIDAY_ID"
+                INNER JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_HOLIDAY_CALENDAR') }} "STG_HOLIDAY_CALENDAR"
+                ON  "STG_HOLIDAY_CALENDAR"."ID" = "STG_HOLIDAY_CALENDAR_ASSOCIATION"."HOLIDAY_CALENDAR_ID"
+                INNER JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_HOLIDAY_CALENDAR_MEMBERSHIP') }} "STG_HOLIDAY_CALENDAR_MEMBERSHIP"
+                ON "STG_HOLIDAY_CALENDAR"."ID" = "STG_HOLIDAY_CALENDAR_MEMBERSHIP"."HOLIDAY_CALENDAR_ID"
+            name: V_EMPLOYEE_HOLIDAYS
+            noLinkRefs: []
+      name: V_EMPLOYEE_HOLIDAYS
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: c5e3d910-595e-4508-9a2a-e5e88b7685d0

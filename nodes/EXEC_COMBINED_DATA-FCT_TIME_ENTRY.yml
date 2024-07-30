@@ -1,0 +1,341 @@
+steps:
+  FCT_TIME_ENTRY-5433e96e-bfb5-4f38-9442-ea92bd340cdd:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: truncate table exec_data_db.refined.FCT_TIME_ENTRY;
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: d8509d51-1a21-4001-aaa2-f32a1daaceea
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fc54c7bf-18e2-4dab-b1d7-a94fa260b7bc
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 99092531-64bf-4fe1-8815-17aab65b0c15
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 58698439-af71-4d11-9052-bc64435641b6
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: fb7a0935-e6f8-489c-8630-52e7bbfe4519
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: STORY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 53a71e56-7b11-4bf8-829a-b17836d881fc
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 1fd7b05d-35fa-4f91-9fcc-9f81a434e01e
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a04ee326-97b0-4fb1-88d7-2aca737d6752
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 40473498-adfd-4ca6-b5a3-7a5a7f76c0cf
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: DATE_PERFORMED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 74f179b4-a5cd-41ed-8480-520ce744836e
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 12c88fc6-cb58-41ee-a497-dd35a2c0d5d0
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TIME_IN_HOURS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"TIME_IN_MINUTES\"/60"
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 8cb19662-527c-4a8a-a07e-01cb6a011b79
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: TIME_IN_MINUTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 97f89cba-535e-412f-aae7-627710d04215
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: d81bd86b-8810-49d2-9378-c0d9a2e00443
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: BILLABLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4483d794-02a3-44d3-a04c-ebf01bf2c35d
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e99270c0-849d-416c-a6d8-1b7ee5b50315
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            config: {}
+            dataType: NUMBER(38,2)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RATE_IN_DOLLARS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"RATE_IN_CENTS\"/100"
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 13945e86-af55-4695-ae3a-e74632efdd03
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: RATE_IN_CENTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 363ec666-1559-4e09-b431-d258ab5a5e75
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 520bd6d4-4605-4ce9-804d-b20de1a837ab
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            config: {}
+            dataType: NUMBER(38,2)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: COST_RATE_IN_DOLLARS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"COST_RATE_IN_CENTS\"/100"
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: d07089bd-4967-43f1-ac99-b3341fb203fe
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: COST_RATE_IN_CENTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 594ac5ee-ce5e-4808-b00a-647cf8f7af16
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: be0e17ce-90f2-4cc6-b26a-d044c504ffc1
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: APPROVED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3ba72cbc-c415-4f82-b231-3597eab1b8ae
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 618299b7-5a5c-4304-9af4-16f7d102bc79
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: VARCHAR(512)
+            description: ""
+            hashDetails: null
+            name: NOTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c630692d-f338-4743-a939-871cd141de00
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: d7d70e83-a0ea-44cc-8e36-1d0b10529b40
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: CURRENCY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bf36d2db-f0ed-43a0-b4b5-61957be5650d
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: f3b4c913-0399-4043-bfbf-093ea21d9f56
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e0818caf-331d-4658-999e-87095beb7ea0
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 91a463fe-ead6-4ada-bf6b-571ae4c33933
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 615e5b5b-52fe-48d7-9d2e-7c9e74cc1827
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: 2d7884fe-929c-4a63-b746-d671b1a906b4
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 49164351-78c3-416a-8e35-6d1539209951
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - columnReference:
+              columnCounter: eece6480-8272-41c9-8f68-2307a5f9c6ed
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 42c2d420-cfea-423b-b861-f068eb702ff0
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1945052c-81b2-427e-95aa-6f825e5051bc
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 28875f6e-2f99-423a-bbef-2383eb96c9f8
+              stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_TIME_ENTRY
+            join:
+              joinCondition: FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_TIME_ENTRY') }} "STG_TIME_ENTRY"
+            name: FCT_TIME_ENTRY
+            noLinkRefs: []
+      name: FCT_TIME_ENTRY
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 5433e96e-bfb5-4f38-9442-ea92bd340cdd

@@ -1,0 +1,102 @@
+steps:
+  STG_HOLIDAY_CALENDAR-f01c074c-4b9f-4489-85e2-60f5037eef5b:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: d67fa622-e242-4628-8b76-0ad2c87006ae
+              stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 65a1e0fb-8347-4ac8-a477-4b0e556471da
+                    stepCounter: 11055728-eb8e-42b6-a97a-9a8e62e836be
+                transform: ""
+          - columnReference:
+              columnCounter: 0dd0d108-f1e0-4beb-8a31-3ab5b997e483
+              stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4b41d9bf-3608-460b-a75c-644b3c275065
+                    stepCounter: 11055728-eb8e-42b6-a97a-9a8e62e836be
+                transform: ""
+          - columnReference:
+              columnCounter: 1546020d-ec3c-4706-8b9a-3742e7fe1213
+              stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bf93f4ef-cdca-4410-ad46-cc758f6cf019
+                    stepCounter: 11055728-eb8e-42b6-a97a-9a8e62e836be
+                transform: ""
+          - columnReference:
+              columnCounter: 5b9867c4-20e0-4268-bdf7-1f5c9f2f0357
+              stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: DEFAULT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7bace8b9-db98-4864-9d4e-053137fa652c
+                    stepCounter: 11055728-eb8e-42b6-a97a-9a8e62e836be
+                transform: ""
+          - columnReference:
+              columnCounter: b9d6eefd-5ffa-4872-a129-0812d358c7dc
+              stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1d7c1e22-3611-4035-9c85-180c59731da3
+                    stepCounter: 11055728-eb8e-42b6-a97a-9a8e62e836be
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: HOLIDAY_CALENDAR
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'HOLIDAY_CALENDAR') }} "HOLIDAY_CALENDAR"
+            name: STG_HOLIDAY_CALENDAR
+            noLinkRefs: []
+      name: STG_HOLIDAY_CALENDAR
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: f01c074c-4b9f-4489-85e2-60f5037eef5b

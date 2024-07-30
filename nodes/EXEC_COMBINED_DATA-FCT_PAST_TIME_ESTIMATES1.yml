@@ -1,0 +1,462 @@
+steps:
+  FCT_PAST_TIME_ESTIMATES1-dc449825-60f4-44bd-8e78-b6950e450dbe:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: truncate table exec_data_db.refined.FCT_PAST_TIME_ESTIMATES;
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 23f3a53d-01f8-48b4-8b84-fe3111e2acd7
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c1edbdb7-2247-4fc3-aa13-8b8575a161e8
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: f2dc4016-f947-435f-a74d-1ed21d67b225
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b511e0c8-b288-4b62-b950-f009ba86fc0a
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 6daddc09-79a9-476c-af4d-3c28354857a2
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: CREATOR_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 10dee3ee-5017-482b-9424-2f992cab42b3
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 22734d33-8e5a-496a-aeb6-441cbf174f06
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: VARCHAR
+            description: ""
+            hashDetails: null
+            name: FULL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e6e8a9a5-ed09-4ddc-a0b9-656290cc0210
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: c5a904d9-e1f3-44cb-b95e-75235852f018
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: VARCHAR
+            description: ""
+            hashDetails: null
+            name: TITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ae76e82d-dcbf-4ef6-8cf7-f8f9ed812bb2
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: e56b788c-0094-4adb-92ce-816e42369a7f
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: VARCHAR
+            description: ""
+            hashDetails: null
+            name: CLIENT_ROLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2df66f3d-d504-4df8-84c8-dead34419557
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: e7c46405-7440-4b27-9df1-35bc2a715c25
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f56aaf58-1bcc-4216-b6ba-58e09e964a96
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 0d10c0b7-70ae-41fc-917c-f8c6f087ce74
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: VARCHAR
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: ACTUAL_YEAR_MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c3075e5-548c-40a0-be44-156e49b70ce5
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 9bc0e90e-b89d-43fe-af92-b53c4be3329b
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: ADJUSTED_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 96b34f64-8f1b-4edd-9d43-0c069eeb5f21
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 67c52807-253f-497e-80a8-50bd3bb2114f
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: FIXED_FEE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0d1c1975-d2eb-4b17-8de0-71ea052283d1
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: a3ed8294-5bda-42a9-a39d-4f218091bde9
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: WORKDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6413706d-be27-4e93-841d-81d635ef9531
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: 1cb64eaa-61d3-4576-b6ee-f0970f1e4212
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: CALCULATED_DAYS_OFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c780b64-d171-4f0e-a704-37816c8ea711
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: 940cdc5c-e429-4ed7-a08a-198140c63725
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: HOLIDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 99cb927b-589e-44ff-b088-31634241a3d0
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: 8a58b443-bed8-48eb-8167-3f0f310353c6
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            name: PERCENTAGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cb76bad5-b4d5-4780-9d19-09d565a5d03c
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: 2dc0237b-42ce-4d74-aaa5-4cf0a967d56c
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            name: ACTUAL_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0af739ee-447c-4bc8-9be9-8e2e3265b6f2
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: c209c268-a933-4b8f-90cd-235372ba7691
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            name: ACTUAL_HOURS_WORKED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fb30ee62-ff3b-48cc-beb2-6642b653e38e
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: d81d78e2-fa4d-4495-bc74-26e936cc704d
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            name: COST_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 26b64289-70ad-4abe-888e-39ae16a3802c
+                    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+                transform: ""
+          - columnReference:
+              columnCounter: ade1f8c9-6f37-4ba8-a95b-faed3d3bbc93
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            name: ESTIMATED_HOURS_PER_DAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d8a39fb5-07b7-49da-8a92-0b05d50ae9eb
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+          - columnReference:
+              columnCounter: ed7a12e6-4018-4b6c-9a2b-e8a7b3ee694a
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            dataType: NUMBER(38,2)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: ESTIMATED_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6bea43c5-53b6-4096-be08-cea05e355fb4
+                    stepCounter: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b16473bd-f8ea-4a7e-8d99-d3085e9d909e
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9c8561e7-f4f7-4da0-85f7-c7c4b027c8c2
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 921fe30f-8d05-4038-9084-ccc96aebc083
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOM_GEOGRAPHY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 21f9d480-8eb4-4df6-96a5-dc1ed921a4ff
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 43069c24-e5fa-43a9-a808-49a512ccd729
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOM_VERITCAL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 207bf1ca-0072-476e-82d2-f85b101835ff
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 56a9b345-7f65-4aec-933a-17f1573d768a
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR_QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d8838b5e-589c-471e-8b2e-d6e1843201fa
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e720bc82-5c47-4bca-8b83-90c9363d8aab
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5395df7e-905c-488a-bba6-8e236e44a5f0
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 84375aeb-6809-477c-a797-ecf55c31252a
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: NUMBER(38,2)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FINAL_ESTIMATED_HOURS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: CASE WHEN "V_ESTIMATED_WORK"."FIXED_FEE" = TRUE THEN ("V_ESTIMATED_WORK"."ESTIMATED_WORKDAYS"/30) * 173.5 * V_ESTIMATED_WORK."PERCENTAGE"/100 ELSE V_ESTIMATED_WORK."ESTIMATED_TOTAL_HOURS_WORKED" END
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 62875322-85a7-4886-aded-106fb256fd36
+              stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe
+            config: {}
+            dataType: NUMBER(38,2)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_WORKDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4e96e033-49c5-438d-b328-7a80da9f910f
+                    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+                transform: ""
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              V_ESTIMATED_WORK: 4299a267-609e-4de2-9459-82d4b0b4ac87
+              V_RATES: 9b474f12-6e6d-4ab2-a490-dc069f790f71
+              V_TIME_ENTRY_ACTUAL: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_COMBINED_DATA
+                nodeName: V_ESTIMATED_WORK
+              - locationName: EXEC_COMBINED_DATA
+                nodeName: V_RATES
+              - locationName: EXEC_COMBINED_DATA
+                nodeName: V_TIME_ENTRY_ACTUAL
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_COMBINED_DATA', 'V_TIME_ENTRY_ACTUAL') }} "V_TIME_ENTRY_ACTUAL"
+                INNER JOIN {{ ref('EXEC_COMBINED_DATA', 'V_ESTIMATED_WORK') }} "V_ESTIMATED_WORK"
+                ON "V_TIME_ENTRY_ACTUAL"."WORKSPACE_ID"= "V_ESTIMATED_WORK"."WORKSPACE_ID"
+                AND "V_TIME_ENTRY_ACTUAL"."USER_ID" = "V_ESTIMATED_WORK"."USER_ID"
+                and "V_TIME_ENTRY_ACTUAL"."START_DATE" = "V_ESTIMATED_WORK"."START_DATE"
+                AND "V_TIME_ENTRY_ACTUAL"."ACTUAL_YEAR_MONTH" = "V_ESTIMATED_WORK"."YEAR_MONTH_NAME"
+                INNER JOIN {{ ref('EXEC_COMBINED_DATA', 'V_RATES') }} "V_RATES"
+                ON "V_RATES".WORKSPACE_ID = "V_TIME_ENTRY_ACTUAL".WORKSPACE_ID AND "V_RATES".ROLE_ID = "V_ESTIMATED_WORK"."ROLE_ID"
+            name: FCT_PAST_TIME_ESTIMATES1
+            noLinkRefs: []
+      name: FCT_PAST_TIME_ESTIMATES1
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: dc449825-60f4-44bd-8e78-b6950e450dbe

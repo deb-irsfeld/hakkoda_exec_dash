@@ -1,0 +1,153 @@
+steps:
+  HOLIDAY_CALENDAR_MEMBERSHIP-e19e9abe-a605-40b6-9ac6-95626b7dce75:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a1dc0b28-a0a4-4ec5-84b5-7098e61aa2af
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 318bc9d6-345e-4c34-895b-b3126a70ed41
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 027739db-5758-45d2-807a-a3a891155e77
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: HOLIDAY_CALENDAR_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a969f27f-f9f6-43db-8109-d9685be39c6a
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: START_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 13e04f29-660e-42e0-9eed-57861de956f6
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: END_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f76d6eda-5b3c-4632-a745-00f173771786
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IN_USE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3c29f568-31d9-490e-baca-e6b5a8046a17
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 09e1b3f9-e4dc-4cea-9589-0bd087154697
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b9960b72-6571-4f83-b5a7-c0be4ca0aae5
+              stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'HOLIDAY_CALENDAR_MEMBERSHIP') }}
+      name: HOLIDAY_CALENDAR_MEMBERSHIP
+      schema: ""
+      sqlType: Source
+      table: HOLIDAY_CALENDAR_MEMBERSHIP
+      type: sourceInput
+    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75

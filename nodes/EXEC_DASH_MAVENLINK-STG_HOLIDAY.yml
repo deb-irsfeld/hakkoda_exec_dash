@@ -1,0 +1,141 @@
+steps:
+  STG_HOLIDAY-49623b61-167b-4246-9d59-4c6c61bdb403:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: db115f43-c262-438c-8c36-058b5c7d2605
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a4168c0-4607-485b-a348-f1de7a47ad6d
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: 267f2f0c-37d9-4399-8f02-a297eb4c3155
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f50036a5-6aee-4aca-b230-da1872b144bd
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: 37b6ee39-131d-4178-aa41-aa7a66b696cf
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b531b476-6749-46d7-b542-50e1c3a43597
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: 32942d17-e8d2-4d71-9516-5a9456555900
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 98563888-4e49-4c2a-a639-88fc43115a00
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: 681bae31-d451-4e34-adc5-c0b0a3ff43bf
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: PAID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ddf59793-0263-4403-b0f6-a9f6bda77797
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: e83315c8-0903-40df-8eb9-94196f1ae76d
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: TOTAL_HOURS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1aff17f1-a4e4-4fa3-aee2-c6171b2b2d77
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: cf65e941-5236-4a4a-a4b1-e263ba3aa619
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a67d53f-d672-48cb-a66c-c018cca00e7b
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+          - columnReference:
+              columnCounter: 4905d784-7860-4d47-9d48-81821ae33b36
+              stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 74c84475-a62e-4f9c-9ff7-7951d3399c98
+                    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: HOLIDAY
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'HOLIDAY') }} "HOLIDAY"
+            name: STG_HOLIDAY
+            noLinkRefs: []
+      name: STG_HOLIDAY
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 49623b61-167b-4246-9d59-4c6c61bdb403

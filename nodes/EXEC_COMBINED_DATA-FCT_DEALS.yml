@@ -1,0 +1,239 @@
+steps:
+  FCT_DEALS-d7707a0d-9365-460e-9b47-303c6c0dacb8:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: truncate table exec_data_db.refined.FCT_DEALS;
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 467869cb-0405-4f3e-92be-23ee66719304
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            isBusinessKey: true
+            name: DEAL_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: eb391d41-b98c-4082-8f9a-9682a1ad386e
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: e87e6498-fb4f-459b-91de-126bded9b17e
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: PORTAL_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: de7f0595-b755-4392-82e8-7193793d5a94
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: 088ccec8-3ff5-4b92-a9b0-cc7b5d1b3605
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 51a60c54-560b-4e00-aade-d3c6bfd34557
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: ea73ba84-e2f2-4ca1-8717-ae042c52912d
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cf9a434e-4e46-4177-8e95-d55cf18e38b6
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: e42c528e-e083-4d0a-a2ed-364b75015138
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d4e3a63b-29f4-4234-a4ef-05ab30784369
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: 9f58090c-dc17-49eb-9aee-d3849879a4a2
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: OWNER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1df311a5-22d1-4a60-aa82-217802af5cd4
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: abae6b77-1529-4f2c-8a8c-b922be90c5c5
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PROJECT_BOOKINGS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c7d52b3d-93d5-49a0-b814-c25ffc5734ab
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: CASE WHEN "STG_DEAL"."DEAL_PIPELINE_STAGE_ID" IN ('closedwon') then "STG_DEAL"."PROPERTY_HS_PROJECTED_AMOUNT_IN_HOME_CURRENCY" else 0 end
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 69e41501-1b4b-447d-99ae-ca7ab237ba30
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: COMMITTED_PIPELINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c7d52b3d-93d5-49a0-b814-c25ffc5734ab
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: CASE WHEN "STG_DEAL"."PROPERTY_HS_MANUAL_FORECAST_CATEGORY" in ('COMMIT') then "STG_DEAL"."PROPERTY_HS_PROJECTED_AMOUNT_IN_HOME_CURRENCY" else 0 end
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a72e1f33-9b28-4bf7-9be9-ca8d5dd2458c
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: BEST_CASE_PIPELINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c7d52b3d-93d5-49a0-b814-c25ffc5734ab
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: CASE WHEN "STG_DEAL"."PROPERTY_HS_MANUAL_FORECAST_CATEGORY" in ('BEST_CASE') then "STG_DEAL"."PROPERTY_HS_PROJECTED_AMOUNT_IN_HOME_CURRENCY" else 0 end
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: f83863ca-a4d7-483b-951d-19dfd841a9b5
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: PROPERTY_CLOSEDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d1a52c30-a03d-4673-bbbc-d4f7061bb457
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - columnReference:
+              columnCounter: 04defcec-2dea-4def-9b41-d25f806c926a
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            dataType: VARCHAR
+            description: ""
+            hashDetails: null
+            name: PROPERTY_MAVENLINK_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e3480eae-53f7-4df8-a83a-4eaebb4cfd88
+                    stepCounter: 475eb22b-09b1-4009-ab27-cc039b7007e7
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e48c6663-b5d0-47fe-8ac8-5ff08465e647
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a2c98ab9-b30a-4ce4-8ee3-824040c09275
+              stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_DEAL: 475eb22b-09b1-4009-ab27-cc039b7007e7
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_HUBSPOT
+                nodeName: STG_DEAL
+            join:
+              joinCondition: |
+                FROM {{ ref('EXEC_DASH_HUBSPOT', 'STG_DEAL') }} "STG_DEAL"
+            name: FCT_DEALS
+            noLinkRefs: []
+      name: FCT_DEALS
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: d7707a0d-9365-460e-9b47-303c6c0dacb8

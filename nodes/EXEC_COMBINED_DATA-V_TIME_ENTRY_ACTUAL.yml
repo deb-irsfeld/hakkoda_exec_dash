@@ -1,0 +1,345 @@
+steps:
+  V_TIME_ENTRY_ACTUAL-098557a2-f5bc-48f7-844a-f75c7f9e9218:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c1edbdb7-2247-4fc3-aa13-8b8575a161e8
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 58698439-af71-4d11-9052-bc64435641b6
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b511e0c8-b288-4b62-b950-f009ba86fc0a
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a04ee326-97b0-4fb1-88d7-2aca737d6752
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 10dee3ee-5017-482b-9424-2f992cab42b3
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CREATOR_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6650b814-6d23-4c38-9b7d-57075ee35d30
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ae76e82d-dcbf-4ef6-8cf7-f8f9ed812bb2
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bd548417-14e0-4a0d-8a34-9e562e6d9240
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2df66f3d-d504-4df8-84c8-dead34419557
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CLIENT_ROLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ddf7b09c-5f75-4309-b75b-6fe13624d47e
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f56aaf58-1bcc-4216-b6ba-58e09e964a96
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d0c6149f-5dbb-4e2d-a076-879b8336308b
+                    stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 96b34f64-8f1b-4edd-9d43-0c069eeb5f21
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ADJUSTED_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: CASE WHEN "STG_WORKSPACE_ALLOCATION"."END_DATE">= CURRENT_DATE() THEN CURRENT_DATE() ELSE  "STG_WORKSPACE_ALLOCATION"."END_DATE" END
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9c3075e5-548c-40a0-be44-156e49b70ce5
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ACTUAL_YEAR_MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: LEFT("STG_TIME_ENTRY"."DATE_PERFORMED",7)
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cb76bad5-b4d5-4780-9d19-09d565a5d03c
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PERCENTAGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d0698f4-2acb-47f1-b400-a4b8d64ae6ed
+                    stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7004794a-febd-4a77-8cab-65f7b8566bb9
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_HOURS_PER_DAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_WORKSPACE_ALLOCATION\".\"PERCENTAGE\" / 100 * 8"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0af739ee-447c-4bc8-9be9-8e2e3265b6f2
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ACTUAL_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"RATE_IN_CENTS\"/100"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fb30ee62-ff3b-48cc-beb2-6642b653e38e
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ACTUAL_HOURS_WORKED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 97f89cba-535e-412f-aae7-627710d04215
+                    stepCounter: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+                transform: SUM("STG_TIME_ENTRY"."TIME_IN_MINUTES"/60)
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 26b64289-70ad-4abe-888e-39ae16a3802c
+              stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: COST_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"COST_RATE_IN_CENTS\"/100"
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_TIME_ENTRY: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+              STG_WORKSPACE: ad383d69-c93b-4976-871b-c18d60aa8ae7
+              STG_WORKSPACE_ALLOCATION: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+              STG_WORKSPACE_RESOURCE: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_TIME_ENTRY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE_ALLOCATION
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE_RESOURCE
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_TIME_ENTRY') }} "STG_TIME_ENTRY"
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE') }} "STG_WORKSPACE"
+                ON "STG_TIME_ENTRY"."WORKSPACE_ID" = STG_WORKSPACE."ID"
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE_RESOURCE') }} "STG_WORKSPACE_RESOURCE"
+                ON "STG_WORKSPACE"."ID" = STG_WORKSPACE_RESOURCE.WORKSPACE_ID AND "STG_TIME_ENTRY"."USER_ID" = "STG_WORKSPACE_RESOURCE"."USER_ID"
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE_ALLOCATION') }} "STG_WORKSPACE_ALLOCATION"
+                ON "STG_WORKSPACE_RESOURCE"."ID" = STG_WORKSPACE_ALLOCATION."WORKSPACE_RESOURCE_ID"
+
+                --{{ ref('EXEC_DASH_MAVENLINK','STG_WORKSPACE_ALLOCATION') }} "STG_WORKSPACE_ALLOCATION"
+                --JOIN {{ref('EXEC_DASH_MAVENLINK','STG_WORKSPACE_RESOURCE') }} "STG_WORKSPACE_RESOURCE"
+                --ON STG_WORKSPACE_RESOURCE.ID = STG_WORKSPACE_ALLOCATION.WORKSPACE_RESOURCE_ID
+                --JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE') }} "STG_WORKSPACE"
+                --ON "STG_WORKSPACE".ID = STG_WORKSPACE_RESOURCE.WORKSPACE_ID
+                --JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_TIME_ENTRY') }} "STG_TIME_ENTRY"
+                --ON "STG_TIME_ENTRY"."USER_ID"= "STG_WORKSPACE_RESOURCE"."USER_ID"
+                --AND "STG_TIME_ENTRY"."WORKSPACE_ID" = "STG_WORKSPACE_RESOURCE"."WORKSPACE_ID"
+                --and "STG_TIME_ENTRY"."DATE_PERFORMED" BETWEEN "STG_WORKSPACE_ALLOCATION"."START_DATE" and "STG_WORKSPACE_ALLOCATION".--"END_DATE"
+
+
+                WHERE "STG_TIME_ENTRY"."APPROVED" = 'TRUE' 
+
+
+                GROUP BY
+                "STG_TIME_ENTRY"."WORKSPACE_ID","STG_TIME_ENTRY"."USER_ID","STG_WORKSPACE"."CREATOR_ID",
+                "STG_WORKSPACE"."TITLE","STG_WORKSPACE"."CLIENT_ROLE_NAME","STG_WORKSPACE_ALLOCATION"."START_DATE",
+                 "STG_WORKSPACE_ALLOCATION"."PERCENTAGE","STG_WORKSPACE_ALLOCATION"."END_DATE"
+                ,"STG_TIME_ENTRY"."APPROVED", LEFT("STG_TIME_ENTRY"."DATE_PERFORMED",7)
+                ,"STG_TIME_ENTRY"."RATE_IN_CENTS", "STG_TIME_ENTRY"."COST_RATE_IN_CENTS"
+            name: V_TIME_ENTRY_ACTUAL
+            noLinkRefs: []
+      name: V_TIME_ENTRY_ACTUAL
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: 098557a2-f5bc-48f7-844a-f75c7f9e9218

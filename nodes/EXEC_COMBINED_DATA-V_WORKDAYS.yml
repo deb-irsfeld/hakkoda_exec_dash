@@ -1,0 +1,64 @@
+steps:
+  V_WORKDAYS-efe755b5-e62b-482f-9473-459a3e33f835:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: ee5cd106-78ce-4f67-81c5-ee6bb8c5acf9
+              stepCounter: efe755b5-e62b-482f-9473-459a3e33f835
+            dataType: NUMBER(18,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6185799c-efb1-4b9b-a814-9535fbca2aab
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: ""
+          - columnReference:
+              columnCounter: 47a32ab1-904d-4c8b-8ee6-bfb54d63b24d
+              stepCounter: efe755b5-e62b-482f-9473-459a3e33f835
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: CAL_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5ff344c4-ec28-4e1b-8097-787a134ca4d2
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_DATE_DATA: dd273309-8cbb-440d-a9d3-c242362ce020
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_STAGED_REFERENCE
+                nodeName: STG_DATE_DATA
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_STAGED_REFERENCE', 'STG_DATE_DATA') }} "STG_DATE_DATA"
+
+                WHERE "STG_DATE_DATA"."DAY_TYPE" = 'Weekday'
+            name: V_WORKDAYS
+            noLinkRefs: []
+      name: V_WORKDAYS
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: efe755b5-e62b-482f-9473-459a3e33f835

@@ -1,0 +1,274 @@
+steps:
+  STG_DATE_DATA-dd273309-8cbb-440d-a9d3-c242362ce020:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_STAGED_REFERENCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 6185799c-efb1-4b9b-a814-9535fbca2aab
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: NUMBER(18,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c6c0eca6-0503-4568-ae5f-a369a5fe549a
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 5ff344c4-ec28-4e1b-8097-787a134ca4d2
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: CAL_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 423bde55-1bd5-4213-b91d-bd1bf592af13
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: f7acf6f8-f519-49cd-aef6-29ef209c208b
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(3)
+            description: ""
+            hashDetails: null
+            name: DAY_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9f23e9b9-64a2-4239-b903-614074aecee6
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: d2d883f4-64e9-4141-b137-387e7fb8d9d0
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(3)
+            description: ""
+            hashDetails: null
+            name: MONTH_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b349cafb-e72f-495b-8a02-4ea18142c651
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 09805bed-0d98-4af6-b215-05f66dad93ad
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: NUMBER(2,0)
+            description: ""
+            hashDetails: null
+            name: MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3953bc01-898c-4869-9b76-cbbdf0e53a7d
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: b835b8f9-bfab-4a85-b13f-e53180a1938a
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: NUMBER(4,0)
+            description: ""
+            hashDetails: null
+            name: YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2e2fce81-96a0-48dc-942f-7a8476bc6a3b
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 5b3e730e-034e-47be-8a26-ae44c07f9d8b
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: NUMBER(2,0)
+            description: ""
+            hashDetails: null
+            name: DAY_OF_MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4855ae24-3b62-4390-a0d9-d1cc7885adc8
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: ff55cf3e-49d3-42ce-837c-6548fd3419ef
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(7)
+            description: ""
+            hashDetails: null
+            name: DAY_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ccca1208-4190-46aa-ae16-903016c1ee2d
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: b1cab3f3-6c89-4c35-b732-24459c6a0b5a
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: US_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f469470b-68b2-48e1-9204-42eb84c0bc14
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 94a287a2-de6c-4046-8d74-8063a41dacd7
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: PORTUGAL_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8bc4f4fd-1728-4c74-b3aa-f8317259d2f5
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: dcb35e42-e225-4b26-a0c4-91032af5e5ac
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: COSTA_RICA_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f3575dfb-ee3f-4256-92df-09e990fda546
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 4ed98f43-74ef-407c-a06e-2ade500c8742
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: MEXICO_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9abfa0b3-430b-4ccd-9fb7-3632d73a77ba
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 57ad5a21-ede5-4d09-9fd5-4876f9e5f7b9
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: UK_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 85c69189-b9a3-429f-b35b-76d1015d9558
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 1e4e4cbb-e77c-4a94-a277-41e846acfa6f
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(1)
+            description: ""
+            hashDetails: null
+            name: CANADA_HOLIDAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 86862e95-6a54-4621-a3c2-179aa34fa91c
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - columnReference:
+              columnCounter: 56e60ad3-ceaf-4c82-bc58-2c3ddfc0d46d
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashDetails: null
+            name: YEAR_MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 92a94b2e-3cec-4498-8dab-c92ab3076f80
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2e740dcb-8fea-4b4c-a26f-b19f81cee10e
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR_QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 693a0b5c-b95e-4f03-b0c0-83aab51bd678
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 95df31e5-c0c1-42ce-ac87-e31a97e7de56
+              stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4502517d-5f95-4083-9754-c9d447f4fddf
+                    stepCounter: 28a36d89-3a0c-4b11-ad9d-973214013a03
+                transform: ""
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_REFERENCE
+                nodeName: DATE_DATA
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_REFERENCE', 'DATE_DATA') }} "DATE_DATA"
+            name: STG_DATE_DATA
+            noLinkRefs: []
+      name: STG_DATE_DATA
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020

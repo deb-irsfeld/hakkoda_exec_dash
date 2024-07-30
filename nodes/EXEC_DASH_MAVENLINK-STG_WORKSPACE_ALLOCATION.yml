@@ -1,0 +1,193 @@
+steps:
+  STG_WORKSPACE_ALLOCATION-8e95994a-058a-4ebc-bc3d-890bc9db00ce:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: a6bb1207-ee35-476f-97fd-739bb69eb796
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 321d8316-495a-4af6-8068-91e688fcd1b6
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: eb7964da-8ada-4cb2-b2fc-bae9e8e02cfc
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: WORKSPACE_RESOURCE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d61ceaaf-5bdc-4834-8519-27f14dd8297b
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: d0c6149f-5dbb-4e2d-a076-879b8336308b
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3946aa18-ba39-4628-8df9-a5b7bf7c140a
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 19adda6c-de2a-4035-ae85-90fec2374ce8
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6b8164cd-cf22-4bbb-93da-8b4543563e32
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 2dd184ce-ae53-4ca5-b251-186ceb8ac598
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: HARD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 362d051f-2218-4b7e-83a0-cd5e0cb66b0d
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 6b607f22-ad91-4fe2-a06e-2ae0a48567df
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: MINUTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: edf43cdb-742e-4fc3-96e9-2a390275cac6
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 9d0698f4-2acb-47f1-b400-a4b8d64ae6ed
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: FLOAT
+            description: ""
+            hashDetails: null
+            name: PERCENTAGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d5abc774-c700-4c7c-8b6b-13c6194bb00d
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 2e2a1dba-d0d0-44c1-8a8f-832290aaf640
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: VARCHAR(256)
+            description: ""
+            hashDetails: null
+            name: NOTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1620a6b3-a650-4885-9c39-7873c89e3053
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: a534f144-8b48-49cb-8c81-dc6991820e38
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8fb94400-8613-4e6d-bec4-1ff05dfc77f6
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: 9f47d5b6-47fd-4876-bcf5-79b36463d407
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c772c886-0dbc-4a11-9ab0-175b5f5992a7
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: b64f6a3e-bf18-44a6-bb81-17986cd4462e
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c3dc655b-3ca9-4500-b403-d6567f8a3503
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+          - columnReference:
+              columnCounter: cb8c5f9d-8f88-4d9f-85e0-ccaca5f79873
+              stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c8660771-b14d-43ff-99d3-ad5267905d74
+                    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: WORKSPACE_ALLOCATION
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'WORKSPACE_ALLOCATION') }} "WORKSPACE_ALLOCATION"
+            name: STG_WORKSPACE_ALLOCATION
+            noLinkRefs: []
+      name: STG_WORKSPACE_ALLOCATION
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce

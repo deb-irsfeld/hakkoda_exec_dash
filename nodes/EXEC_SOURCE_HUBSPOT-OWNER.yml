@@ -1,0 +1,153 @@
+steps:
+  OWNER-9c21cc81-de85-4aa8-927b-5d49b59d8a3d:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_HUBSPOT
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5618b204-7941-48da-b21a-e1038905045b
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dcf2a235-32f5-4403-876f-1f3faf3620f5
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: FIRST_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 72ce33c0-7fbf-4aae-a17e-fbb5cfbed097
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LAST_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f1174be4-c7b5-4624-b0ee-ed5802227605
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EMAIL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eeeb806b-b263-4042-bd63-8d8492bc75ab
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f4906b3b-c571-47a9-ad8b-be8164cbead0
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a08a877b-c55b-4694-8462-9e7654642d9b
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ACTIVE_USER_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 58c02235-61fd-46a7-b5f1-62979e636706
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c528e48e-11d1-478f-be00-d0c0273f0b27
+              stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_HUBSPOT', 'OWNER') }}
+      name: OWNER
+      schema: ""
+      sqlType: Source
+      table: OWNER
+      type: sourceInput
+    stepCounter: 9c21cc81-de85-4aa8-927b-5d49b59d8a3d

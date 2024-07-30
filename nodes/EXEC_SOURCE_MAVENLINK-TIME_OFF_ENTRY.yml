@@ -1,0 +1,123 @@
+steps:
+  TIME_OFF_ENTRY-cc23d29a-e610-427c-936b-ffb661451aed:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0d3f892d-ec52-4eb4-9602-755aefbeffca
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cb98d66b-97ec-4b7c-8e3d-11272122e012
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: HOURS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f9c25d80-b6ed-47f1-9714-2e2a7fcc69d1
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REQUESTED_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b42c81e5-3c0a-4ad3-bc22-2ac2896479c4
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SUBMISSION_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d9048268-ef70-4656-8455-e3b38061c795
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b9159bfd-6fd7-4bd5-b768-1a096f3b90b7
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 68088edf-e2fd-42f3-9e95-f15dc46b9afa
+              stepCounter: cc23d29a-e610-427c-936b-ffb661451aed
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'TIME_OFF_ENTRY') }}
+      name: TIME_OFF_ENTRY
+      schema: ""
+      sqlType: Source
+      table: TIME_OFF_ENTRY
+      type: sourceInput
+    stepCounter: cc23d29a-e610-427c-936b-ffb661451aed

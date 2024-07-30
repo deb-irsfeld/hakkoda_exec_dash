@@ -1,0 +1,538 @@
+steps:
+  V_ESTIMATED_WORK-4299a267-609e-4de2-9459-82d4b0b4ac87:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_COMBINED_DATA
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e6e8a9a5-ed09-4ddc-a0b9-656290cc0210
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FULL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: eb7fb8c2-52ac-4933-8a35-f1cd860c6baa
+                    stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8a220617-a4c1-42b9-ade2-d103e92071c3
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d5c29df3-3460-4e54-b6ca-9c2500ce79de
+                    stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6da13964-5eb5-4933-87e1-858a4c23cf41
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: WORKSPACE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ebe3acc9-287c-4f8c-9adc-1d305fb25431
+                    stepCounter: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 206a3223-d49b-4f49-9c1a-f63f325e389b
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bd548417-14e0-4a0d-8a34-9e562e6d9240
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 745af2f5-0fd4-449a-b04b-1ed78b90793c
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CLIENT_ROLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ddf7b09c-5f75-4309-b75b-6fe13624d47e
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6d41cef8-12f2-4b50-a2b1-38f3e5a7940d
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PROJECT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: eb8144ea-191d-4d94-97f1-3c950f2625f9
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 207bf1ca-0072-476e-82d2-f85b101835ff
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOM_VERTICAL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 06a9185f-5454-4b68-b188-4b17ade6f119
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 21f9d480-8eb4-4df6-96a5-dc1ed921a4ff
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CUSTOM_GEOGRAPHY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f139c1d9-856b-4d3c-a1e2-e965e230152d
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0d1c1975-d2eb-4b17-8de0-71ea052283d1
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FIXED_FEE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4d22cd5e-eb96-401b-a7ff-5154dd5d417c
+                    stepCounter: ad383d69-c93b-4976-871b-c18d60aa8ae7
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8a2286fd-8554-45fc-b0cf-fb83e617a32e
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d0c6149f-5dbb-4e2d-a076-879b8336308b
+                    stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dfdc585f-f7d8-4d76-87d8-1c30ba81b329
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ADJUSTED_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: CASE WHEN "STG_WORKSPACE_ALLOCATION"."END_DATE" >= LAST_DAY("STG_WORKSPACE_ALLOCATION"."END_DATE") THEN CURRENT_DATE() ELSE "STG_WORKSPACE_ALLOCATION"."END_DATE" END
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 63f14183-9e37-41a3-acbe-2263572d9572
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: YEAR_MONTH_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 56e60ad3-ceaf-4c82-bc58-2c3ddfc0d46d
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d8838b5e-589c-471e-8b2e-d6e1843201fa
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR_QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2e740dcb-8fea-4b4c-a26f-b19f81cee10e
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5395df7e-905c-488a-bba6-8e236e44a5f0
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FISCAL_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95df31e5-c0c1-42ce-ac87-e31a97e7de56
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305ec8f0-dc19-4344-86be-75ced2b5635a
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: PERCENTAGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d0698f4-2acb-47f1-b400-a4b8d64ae6ed
+                    stepCounter: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6413706d-be27-4e93-841d-81d635ef9531
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: WORKDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5ff344c4-ec28-4e1b-8097-787a134ca4d2
+                    stepCounter: dd273309-8cbb-440d-a9d3-c242362ce020
+                transform: COUNT(DISTINCT "STG_DATE_DATA"."CAL_DATE")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9c780b64-d171-4f0e-a704-37816c8ea711
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CALCULATED_DAYS_OFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: COUNT(DISTINCT "STG_TIME_OFF_ENTRY"."REQUESTED_DATE")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 99cb927b-589e-44ff-b088-31634241a3d0
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: HOLIDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: COUNT(DISTINCT "V_EMPLOYEE_HOLIDAYS"."START_DATE")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d8a39fb5-07b7-49da-8a92-0b05d50ae9eb
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_HOURS_PER_DAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_WORKSPACE_ALLOCATION\".\"PERCENTAGE\"/100 * 8"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4e96e033-49c5-438d-b328-7a80da9f910f
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_WORKDAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: COUNT(DISTINCT "STG_DATE_DATA"."CAL_DATE") - COUNT(DISTINCT "STG_TIME_OFF_ENTRY"."REQUESTED_DATE") -  COUNT(DISTINCT "V_EMPLOYEE_HOLIDAYS"."START_DATE")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cd33e96c-c2ed-4310-ab21-02efbff00dd7
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_TOTAL_HOURS_WORKED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: (COUNT(DISTINCT "STG_DATE_DATA"."CAL_DATE") - COUNT(DISTINCT "STG_TIME_OFF_ENTRY"."REQUESTED_DATE") -  COUNT(DISTINCT "V_EMPLOYEE_HOLIDAYS"."START_DATE")) * ("STG_WORKSPACE_ALLOCATION"."PERCENTAGE" / 100 * 8)
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dc2d3825-5ed3-4dff-94db-9cbfc7842821
+              stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87
+            config: {}
+            dataType: ""
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ESTIMATED_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"STG_TIME_ENTRY\".\"RATE_IN_CENTS\"/100"
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_DATE_DATA: dd273309-8cbb-440d-a9d3-c242362ce020
+              STG_TIME_ENTRY: 2d5baf7d-1463-4eaa-98f0-01dbaea7e48b
+              STG_TIME_OFF_ENTRY: e26a6787-6453-4453-9434-ff7ff7dd701f
+              STG_WORKSPACE: ad383d69-c93b-4976-871b-c18d60aa8ae7
+              STG_WORKSPACE_ALLOCATION: 8e95994a-058a-4ebc-bc3d-890bc9db00ce
+              STG_WORKSPACE_RESOURCE: a1f12038-7275-43ee-b40a-f3e22d4fbda6
+              V_EMPLOYEE_HOLIDAYS: c5e3d910-595e-4508-9a2a-e5e88b7685d0
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_COMBINED_DATA
+                nodeName: V_EMPLOYEE_HOLIDAYS
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_TIME_ENTRY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_TIME_OFF_ENTRY
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE_ALLOCATION
+              - locationName: EXEC_DASH_MAVENLINK
+                nodeName: STG_WORKSPACE_RESOURCE
+              - locationName: EXEC_STAGED_REFERENCE
+                nodeName: STG_DATE_DATA
+            join:
+              joinCondition: |-
+                FROM {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE_ALLOCATION') }} "STG_WORKSPACE_ALLOCATION"
+                INNER JOIN {{ ref('EXEC_STAGED_REFERENCE', 'STG_DATE_DATA') }} "STG_DATE_DATA"
+                ON "STG_DATE_DATA"."CAL_DATE" BETWEEN "STG_WORKSPACE_ALLOCATION"."START_DATE" AND 
+                CASE WHEN "STG_WORKSPACE_ALLOCATION"."END_DATE" > CURRENT_DATE THEN CURRENT_DATE ELSE 
+                "STG_WORKSPACE_ALLOCATION"."END_DATE" END
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE_RESOURCE') }} "STG_WORKSPACE_RESOURCE"
+                ON "STG_WORKSPACE_RESOURCE"."ID" = "STG_WORKSPACE_ALLOCATION"."WORKSPACE_RESOURCE_ID"
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_TIME_OFF_ENTRY') }} "STG_TIME_OFF_ENTRY"
+                ON "STG_TIME_OFF_ENTRY"."USER_ID" = "STG_WORKSPACE_RESOURCE"."USER_ID" AND "STG_DATE_DATA"."CAL_DATE" = "STG_TIME_OFF_ENTRY"."REQUESTED_DATE"
+                LEFT JOIN {{ ref('EXEC_COMBINED_DATA', 'V_EMPLOYEE_HOLIDAYS') }} "V_EMPLOYEE_HOLIDAYS"
+                ON "V_EMPLOYEE_HOLIDAYS"."START_DATE" = "STG_DATE_DATA"."CAL_DATE" AND "V_EMPLOYEE_HOLIDAYS"."USER_ID" = "STG_WORKSPACE_RESOURCE"."USER_ID"
+                LEFT JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_WORKSPACE') }} "STG_WORKSPACE"
+                ON "STG_WORKSPACE".ID = "STG_WORKSPACE_RESOURCE"."WORKSPACE_ID"
+                INNER JOIN {{ ref('EXEC_DASH_MAVENLINK', 'STG_TIME_ENTRY') }} "STG_TIME_ENTRY"
+                ON "STG_TIME_ENTRY"."USER_ID" = "STG_WORKSPACE_RESOURCE"."USER_ID" AND "STG_TIME_ENTRY"."WORKSPACE_ID" = "STG_WORKSPACE_RESOURCE"."WORKSPACE_ID" AND "STG_TIME_ENTRY"."DATE_PERFORMED" BETWEEN "STG_WORKSPACE_ALLOCATION"."START_DATE" AND "STG_WORKSPACE_ALLOCATION"."END_DATE"
+
+                WHERE "STG_WORKSPACE_ALLOCATION"."START_DATE" <= CURRENT_DATE AND DAYNAME("STG_DATE_DATA"."CAL_DATE") NOT IN ('Sat','Sun') 
+                and "STG_TIME_ENTRY"."APPROVED" = TRUE
+
+
+
+                         group by   STG_WORKSPACE_ALLOCATION.start_date, STG_WORKSPACE_ALLOCATION.end_date, STG_WORKSPACE_ALLOCATION.percentage, STG_WORKSPACE_RESOURCE.full_name, STG_WORKSPACE.title, STG_WORKSPACE.client_role_name, STG_WORKSPACE.custom_vertical, STG_WORKSPACE.custom_geography, STG_WORKSPACE_RESOURCE.user_id, STG_WORKSPACE_RESOURCE.workspace_id, STG_TIME_ENTRY.rate_in_cents, STG_WORKSPACE.stories_are_fixed_fee_by_default, STG_DATE_DATA.year_month, STG_DATE_DATA.fiscal_year_quarter, STG_DATE_DATA.fiscal_year, 
+                         STG_WORKSPACE.CUSTOM_INTACCT_GL_PROJECT_ID
+            name: V_ESTIMATED_WORK
+            noLinkRefs: []
+      name: V_ESTIMATED_WORK
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: 4299a267-609e-4de2-9459-82d4b0b4ac87

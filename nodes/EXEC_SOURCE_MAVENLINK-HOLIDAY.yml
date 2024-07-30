@@ -1,0 +1,138 @@
+steps:
+  HOLIDAY-59161a72-8f8d-4dbf-b58a-46ec18e40056:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a4168c0-4607-485b-a348-f1de7a47ad6d
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f50036a5-6aee-4aca-b230-da1872b144bd
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b531b476-6749-46d7-b542-50e1c3a43597
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: START_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 98563888-4e49-4c2a-a639-88fc43115a00
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: END_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ddf59793-0263-4403-b0f6-a9f6bda77797
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PAID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1aff17f1-a4e4-4fa3-aee2-c6171b2b2d77
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_HOURS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a67d53f-d672-48cb-a66c-c018cca00e7b
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 74c84475-a62e-4f9c-9ff7-7951d3399c98
+              stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'HOLIDAY') }}
+      name: HOLIDAY
+      schema: ""
+      sqlType: Source
+      table: HOLIDAY
+      type: sourceInput
+    stepCounter: 59161a72-8f8d-4dbf-b58a-46ec18e40056

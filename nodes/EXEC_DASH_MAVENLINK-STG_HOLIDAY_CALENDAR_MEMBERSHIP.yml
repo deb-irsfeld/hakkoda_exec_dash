@@ -1,0 +1,154 @@
+steps:
+  STG_HOLIDAY_CALENDAR_MEMBERSHIP-6100f79f-37ad-4b32-afac-f80d2fb0c07b:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: EXEC_DASH_MAVENLINK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: bfbfbda0-0c88-4844-b403-ec53a6566eb0
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a1dc0b28-a0a4-4ec5-84b5-7098e61aa2af
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: 5be1bb48-5447-4c4a-a3d9-80f9640494c0
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 318bc9d6-345e-4c34-895b-b3126a70ed41
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: d096073f-df94-4844-a495-32473aa4cbd8
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: NUMBER(38,0)
+            description: ""
+            hashDetails: null
+            name: HOLIDAY_CALENDAR_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 027739db-5758-45d2-807a-a3a891155e77
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: 8fa2dbfa-f2d6-4275-8492-215957a4a291
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a969f27f-f9f6-43db-8109-d9685be39c6a
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: af078916-8db7-4d15-8460-c142170f84ba
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: DATE
+            description: ""
+            hashDetails: null
+            name: END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 13e04f29-660e-42e0-9eed-57861de956f6
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: fe7d0fc6-cbf3-4c79-8a06-1cf8d7482d75
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: BOOLEAN
+            description: ""
+            hashDetails: null
+            name: IN_USE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f76d6eda-5b3c-4632-a745-00f173771786
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: 7000acd3-7f91-46e8-8c96-4863b57af995
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: CREATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3c29f568-31d9-490e-baca-e6b5a8046a17
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: 88b736f3-0375-4322-998c-3a86c23fcc0c
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: UPDATED_AT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 09e1b3f9-e4dc-4cea-9589-0bd087154697
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+          - columnReference:
+              columnCounter: d1b14fd6-bb21-4595-b03f-df85cfbd8b6d
+              stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b9960b72-6571-4f83-b5a7-c0be4ca0aae5
+                    stepCounter: e19e9abe-a605-40b6-9ac6-95626b7dce75
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: EXEC_SOURCE_MAVENLINK
+                nodeName: HOLIDAY_CALENDAR_MEMBERSHIP
+            join:
+              joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'HOLIDAY_CALENDAR_MEMBERSHIP') }} "HOLIDAY_CALENDAR_MEMBERSHIP"
+            name: STG_HOLIDAY_CALENDAR_MEMBERSHIP
+            noLinkRefs: []
+      name: STG_HOLIDAY_CALENDAR_MEMBERSHIP
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 6100f79f-37ad-4b32-afac-f80d2fb0c07b

@@ -1,0 +1,198 @@
+steps:
+  WORKSPACE_ALLOCATION-11f0e818-ae8c-47ff-8c8f-2d0a39efb278:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: EXEC_SOURCE_MAVENLINK
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 321d8316-495a-4af6-8068-91e688fcd1b6
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d61ceaaf-5bdc-4834-8519-27f14dd8297b
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: WORKSPACE_RESOURCE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3946aa18-ba39-4628-8df9-a5b7bf7c140a
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: START_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6b8164cd-cf22-4bbb-93da-8b4543563e32
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: END_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 362d051f-2218-4b7e-83a0-cd5e0cb66b0d
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HARD
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: edf43cdb-742e-4fc3-96e9-2a390275cac6
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: MINUTES
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d5abc774-c700-4c7c-8b6b-13c6194bb00d
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: PERCENTAGE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1620a6b3-a650-4885-9c39-7873c89e3053
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8fb94400-8613-4e6d-bec4-1ff05dfc77f6
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c772c886-0dbc-4a11-9ab0-175b5f5992a7
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c3dc655b-3ca9-4500-b403-d6567f8a3503
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c8660771-b14d-43ff-99d3-ad5267905d74
+              stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('EXEC_SOURCE_MAVENLINK', 'WORKSPACE_ALLOCATION') }}
+      name: WORKSPACE_ALLOCATION
+      schema: ""
+      sqlType: Source
+      table: WORKSPACE_ALLOCATION
+      type: sourceInput
+    stepCounter: 11f0e818-ae8c-47ff-8c8f-2d0a39efb278
